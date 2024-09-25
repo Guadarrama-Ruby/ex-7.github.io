@@ -1,0 +1,62 @@
+/* ################################ Grid Layout ######################################################## */ 
+
+.container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "form-body";
+  }
+  
+  .form-body {  display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "left-form right-form";
+    grid-area: form-body;
+  }
+  
+  .left-form { grid-area: left-form; }
+  
+  .right-form { grid-area: right-form; }
+  
+  /* ################################ Grid Layout (END) ################################################### */ 
+
+  /* ################################ Styles ############################################################## */ 
+
+  .container {
+    border: solid black;
+    border-radius: 1rem;
+    padding: 5rem 5rem 5rem 5rem;
+    margin: 2rem 2rem 2rem 2rem;
+  }
+
+  input {
+    width: 75%;
+  }
+
+  .circle {
+    border: solid;
+    border-right-color: lightgray;
+    border-left-color: black;
+    margin: 0 6rem 0 6rem;
+    border-radius: 50%;
+  }
+
+  h3, .circle {
+    text-align: center;
+  }
+
+  s {
+    opacity: 40%;
+  }
+
+  .steps-completed {
+    text-align: justify;
+    background-color: lightgray;
+    border-radius: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+  }
